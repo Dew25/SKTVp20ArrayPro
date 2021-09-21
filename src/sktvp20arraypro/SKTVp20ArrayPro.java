@@ -6,6 +6,7 @@
 package sktvp20arraypro;
 
 import java.util.Arrays;
+import java.util.Random;
 
 
 
@@ -41,6 +42,24 @@ public class SKTVp20ArrayPro {
             }
         }
         System.out.println("]");
+        
+        System.out.println("Двухмерный массив");
+        Random random = new Random();
+        int[][] nums3;
+        nums3 = new int[5][5];
+        for(int i = 0; i < nums3.length;i++){
+            for(int j = 0; j < nums3[i].length; j++){
+                nums3[i][j] = random.nextInt(10);
+            }
+        }
+        System.out.println("nums3 = ");
+        //System.out.println(Arrays.toString(nums3));
+        for(int i = 0; i < nums3.length;i++){
+            for(int j = 0; j < nums3[i].length; j++){
+                System.out.printf("%3d",nums3[i][j]);
+            }
+            System.out.println();
+        }
     }
     
 }
